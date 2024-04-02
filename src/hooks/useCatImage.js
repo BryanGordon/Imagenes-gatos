@@ -3,8 +3,6 @@ import { useEffect, useState } from 'react'
 
 const CAT_PREFIX_IMAGE_URL = 'https://cataas.com'
 
-// Uso de custom hook para mostrar la imagen
-
 export function useCatImage ({ fact }) {
   const [imageUrl, setImageUrl] = useState()
 
