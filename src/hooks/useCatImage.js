@@ -7,7 +7,7 @@ export function useCatImage ({ fact }) {
   const [imageUrl, setImageUrl] = useState()
 
   useEffect(() => {
-    if (!fact) return // se controla si existe un fact
+    if (!fact) return
 
     const threeFirstWords = fact.split(' ', 3).join('  ')
     axios.get(`https://cataas.com/cat/says/${threeFirstWords}?size=5color=red&json=true`)
